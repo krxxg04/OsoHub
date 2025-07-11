@@ -1,13 +1,13 @@
 ---
 title: 'OSOHUB'
-description: 'Descripción de la app web de OSOHUB'
+description: 'Description of the OSOHUB web app'
 pubDate: 'Jul 12 2025'
 heroImage: '../../assets/Blog.jpg'
 ---
 
-Descripción de la web app de OSOHUB.
+Description of the OSOHUB web app.
 
-## Images del funcionamiento de OSOHUB.
+## Images of OSOHUB in action
 
 ![blog placeholder](../../assets/P1.jpg)
 ![blog placeholder](../../assets/P2.jpg)

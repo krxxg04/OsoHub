@@ -1,16 +1,12 @@
 ---
-title: '¿Que novedades tiene OSOHUB?'
-description: 'En OSOHUB podrás compartir tus recuerdos más especiales'
+title: 'What’s new in OSOHUB?'
+description: 'In OSOHUB you can share your most special memories'
 pubDate: 'Jul 10 2025'
 heroImage: '../../assets/blog-placeholder-2.jpg'
 ---
 
-## Novedades de OSOHUB
+## What’s new in OSOHUB
 
-En OSOHUB podrás compartir tus recuerdos más especiales, aquellos momentos 
-únicos donde disfrutaste de un delicioso platillo o bebida. Ya sea en 
-solitario o rodeado de tus seres queridos, OSOHUB te ofrece un espacio para 
-capturar y revivir esas experiencias. Cada bocado, sorbo y sonrisa tiene un 
-valor inmenso, y OSOHUB te permite inmortalizarlos de manera sencilla.
+In OSOHUB you can share your most special memories, those unique moments where you enjoyed a delicious dish or drink. Whether alone or surrounded by your loved ones, OSOHUB offers you a space to capture and relive those experiences. Every bite, sip, and smile has immense value, and OSOHUB allows you to immortalize them easily.
 
 ![blog placeholder](../../assets/Card2.jpg)
