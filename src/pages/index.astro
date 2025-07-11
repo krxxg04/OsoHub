@@ -1,0 +1,70 @@
+---
+// src/pages/index.astro
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.landing-container {
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				padding-top: 4.5rem; /* Evita que el contenido se oculte detrás del header */
+			}
+			.logo-main {
+				width: 150px;
+				margin-bottom: 2rem;
+			}
+			h1 {
+				font-size: 4rem;
+				font-weight: 700;
+				color: white;
+				margin-bottom: 0.5rem;
+			}
+			p.subtitle {
+				font-size: 1.25rem;
+				color: rgb(var(--gray));
+				max-width: 600px;
+				margin-bottom: 2rem;
+			}
+			.cta-button {
+				display: inline-block;
+				padding: 0.8em 2em;
+				background-color: white;
+				color: rgb(var(--black));
+				border-radius: 5px;
+				text-decoration: none;
+				font-weight: bold;
+				transition: transform 0.2s ease;
+			}
+			.cta-button:hover {
+				transform: scale(1.05);
+				color: rgb(var(--black));
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="landing-container">
+				<img src="/OSITOWHITE.png" alt="OSOHUB Logo Grande" class="logo-main" />
+				<h1>{SITE_TITLE}</h1>
+				<p class="subtitle">
+					La red social visual centrada exclusivamente 
+					en la estética de la fotografía.
+				</p>
+				<a href="/about" class="cta-button">Conoce más</a>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

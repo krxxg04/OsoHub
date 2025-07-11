@@ -1,0 +1,54 @@
+---
+// src/components/Footer.astro
+import { SITE_TITLE } from '../consts';
+const today = new Date();
+---
+
+<footer>
+	<div class="social-links">
+		<a href="https://instagram.com" target="_blank" aria-label="Síguenos en Instagram">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+				<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+				<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+			</svg>
+		</a>
+		<a href="https://x.com" target="_blank" aria-label="Síguenos en Twitter/X">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+				<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+			</svg>
+		</a>
+	</div>
+	<p>&copy; {today.getFullYear()} {SITE_TITLE}. Descubre, publica y colecciona inspiración sin distracciones.</p>
+</footer>
+
+<style>
+	footer {
+		padding: 4em 2em 2em;
+		color: rgb(var(--gray));
+		text-align: center;
+		font-size: 0.9rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5em;
+	}
+	.social-links {
+		display: flex;
+		justify-content: center;
+		gap: 1.5em;
+		margin-bottom: 1em;
+	}
+	.social-links a {
+		color: rgb(var(--gray));
+		transition: color 0.3s ease, transform 0.3s ease;
+	}
+	.social-links a:hover {
+		color: white;
+		transform: scale(1.1);
+	}
+	footer p {
+		margin: 0;
+		opacity: 0.8;
+	}
+</style>

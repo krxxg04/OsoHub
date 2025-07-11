@@ -1,0 +1,67 @@
+--- 
+// src/components/Header.astro 
+import HeaderLink from './HeaderLink.astro'; import { SITE_TITLE } from '../consts';
+---
+
+<header>
+	<nav>
+		<a href="/" class="logo">
+			<img src="/OSITOWHITE.png" alt="OSOHUB Logo" />
+		</a>
+		<div class="internal-links">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+		</div>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0;
+		padding: 0 2em;
+		background: rgba(var(--black), 0.8);
+		backdrop-filter: blur(10px);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		box-sizing: border-box;
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 4.5rem;
+	}
+	.logo img {
+		height: 40px;
+		width: auto;
+		margin-top: 5px;
+	}
+	.internal-links {
+		display: flex;
+		gap: 1.5em;
+	}
+	nav a {
+		padding: 1em 0.5em;
+		color: rgb(var(--gray));
+		border-bottom: 4px solid transparent;
+		text-decoration: none;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		letter-spacing: 1.2px;
+	}
+	nav a.active,
+	nav a:hover {
+		color: white;
+		border-bottom-color: var(--accent);
+	}
+	@media (max-width: 720px) {
+		.internal-links {
+			display: none; /* Opcional: ocultar links en móvil para un header más limpio */
+		}
+	}
+</style>

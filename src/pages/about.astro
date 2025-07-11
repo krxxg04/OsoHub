@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+import AboutHeroImage from '../assets/Linux.jpg';
+---
+
+<Layout
+	title="OSOHUB"
+	description="El OSOHUB es una red social visual centrada en la fotografía de comida"
+	pubDate={new Date('7-12-2025')}
+	heroImage={AboutHeroImage}
+>
+	<p>
+		El OSOHUB es una red social visual centrada en la fotografía de comida, Inspirada en el modelo 
+		de plataformas como VSCO, ofrece a los usuarios una experiencia centrada exclusivamente en la 
+		estética culinaria, permitiendo la publicación, exploración y curaduría de imágenes sin 
+		distracciones de recetas o valoraciones. Este informe presenta un caso de estudio de El OSOHUB
+		como una solución de arquitectura de software distribuida, desarrollada bajo el modelo de 3 
+		capas y con la capa de datos desplegada en contenedores. Se analiza su impacto en el negocio, 
+		la arquitectura propuesta y se documentan las decisiones técnico-económicas tomadas para su 
+		implementación.
+	</p>
+
+	<p>
+		Actualmente no existe una red social especializada en la estética de la comida que combine 
+		la simpleza visual de VSCO con funcionalidades sociales ligeras. Las plataformas existentes
+		(Instagram, Pinterest, TikTok) no están diseñadas exclusivamente para contenido gastronómico, 
+		lo cual diluye la experiencia para los foodies, chefs y estetas de la cocina. El OSOHUB nace 
+		como una solución enfocada en ese nicho, brindando un entorno visual limpio, escalable y 
+		centrado en la imagen.
+	</p>
+
+	<p>
+		Además de esta oportunidad de mercado, se identifican desafíos técnicos clave. Uno de ellos
+		es el manejo de contenido multimedia en alta resolución, lo que implica un consumo 
+		significativo de almacenamiento y ancho de banda. Otro aspecto crítico es la necesidad 
+		de mantener la experiencia de usuario rápida y fluida, incluso cuando el volumen de usuarios 
+		crece exponencialmente. La plataforma debe garantizar la integridad de los datos, prevenir 
+		accesos indebidos y contar con mecanismos de moderación de contenido para asegurar un entorno 
+		seguro y adecuado.
+
+	</p>
+
+	<p>
+		Desde el punto de vista del negocio, el reto está en construir una infraestructura lo 
+		suficientemente flexible como para permitir la integración futura con nuevos módulos, 
+		como algoritmos de recomendación, herramientas de análisis visual mediante inteligencia 
+		artificial o integraciones con e-commerce gastronómico.
+	</p>
+</Layout>
